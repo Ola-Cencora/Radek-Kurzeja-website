@@ -1,0 +1,86 @@
+
+@import './../../../styles/variables.scss';
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color;
+    gap: 1.5rem;
+    transition: 1s;
+    transform: translateY(-100vh);
+
+    &___responsive {
+        @extend .navigation;
+        transform: none;
+        height: 100%;
+        flex-direction: column;
+        z-index: 5;
+    }
+    
+    &__btn {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 2rem;
+        color: $color-dark;
+        transition: $transition-color;
+        &:hover {
+            color: $color;
+        }
+
+        &___hide {
+            @extend .navigation__btn;
+            position: absolute;
+            top: $basic-size * 2;
+            right: $basic-size * 2;
+        }
+    }
+
+    &__linkList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $basic-size * 2;
+        padding: 0;
+
+        &__link {
+            transition: $transition-color;
+            text-decoration: none;
+            color: $color-dark;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+        
+            &:hover {
+                color: $color;
+            }
+
+            &___active {
+                @extend .navigation__linkList__link;
+                color: $color;
+            }
+        }    
+    }
+}
+
+@media (min-width: 62rem) {
+
+    .navigation {
+        position: static;
+        transform: none;
+        background-color: transparent;
+
+        &__btn {
+            display: none;    
+        }
+
+        &__linkList {
+            flex-direction: row;
+        }
+    }
+}

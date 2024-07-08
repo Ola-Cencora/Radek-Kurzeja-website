@@ -1,26 +1,29 @@
 import styles from "./Navigation.module.scss";
 import { NavLink } from "react-router-dom";
-import { IoClose } from "react-icons/io5";
+import { IoCloseSharp } from "react-icons/io5";
+import Button from "../../common/Button/Button";
 
 interface NavigationProps {
   isNavShown: boolean;
   setIsNavShown: (state: boolean) => void;
 }
 
-const Navigation = ({ isNavShown, setIsNavShown }: NavigationProps) => {
+const Navigation: React.FC<NavigationProps> = ({
+  isNavShown,
+  setIsNavShown,
+}) => {
   return (
     <nav
       className={`${
         isNavShown ? styles.navigation___responsive : styles.navigation
       }`}
     >
-      <button
-        type="button"
-        className={styles.navigation__btn___hide}
+      <Button
         onClick={() => setIsNavShown(false)}
-      >
-        <IoClose />
-      </button>
+        content={<IoCloseSharp />}
+        ariaLabel="close navigation"
+        variant="navigation_btn"
+      />
       <ul
         onClick={() => setIsNavShown(false)}
         className={styles.navigation__linkList}

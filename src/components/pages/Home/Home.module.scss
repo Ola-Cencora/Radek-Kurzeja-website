@@ -1,0 +1,28 @@
+@import './../../../styles/variables.scss';
+
+.home {
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+
+  &__logo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 62rem) {
+  .home {
+    grid-template-columns: 50% 50%;
+    margin: 0 120px;
+  }
+}
+
+@media (min-width: 82rem) {
+  .home {
+    margin: 0 200px;
+  }
+}
+

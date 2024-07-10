@@ -1,0 +1,9 @@
+@import './../../../styles/variables.scss';
+
+.link {
+  transition: $transition-shadow;
+
+  &:hover, &___active {
+    text-shadow: .5px 0 currentColor, -.5px 0 currentColor, 0 .5px currentColor, 0 -.5px currentColor;
+  }
+}    

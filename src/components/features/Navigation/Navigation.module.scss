@@ -21,35 +21,20 @@
         z-index: 5;
     }
     
-    &__linkList {
+    &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0;
         gap: $basic-size * 2;
-
-        &__link {
-            transition: $transition-color;
-            text-decoration: none;
-            color: $color-dark;
-            text-transform: uppercase;
-            letter-spacing: .2em;
-            font-size: 2rem;
-        
-            &:hover {
-                color: $color;
-            }
-
-            &___active {
-                @extend .navigation__linkList__link;
-                color: $color;
-            }
-        }    
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 0.2em;
     }
 }
 
 @media (min-width: 37.5rem) {
-    .navigation__linkList__link {
+    .navigation__list {
         font-size: 3rem;
     }
 }
@@ -63,7 +48,7 @@
 }
 
 @media (min-width: 82rem) {
-    .navigation__linkList__link {
+    .navigation__list {
         font-size: 4rem;
     }
 }

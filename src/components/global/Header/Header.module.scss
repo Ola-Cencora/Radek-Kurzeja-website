@@ -1,0 +1,17 @@
+@import './../../../styles/variables.scss';
+
+.header {
+  display: flex;
+  height: $basic-size * 6;
+  margin: $basic-size;
+
+  &__logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    &___name {
+      font-size: 1rem;
+    }
+  }
+}

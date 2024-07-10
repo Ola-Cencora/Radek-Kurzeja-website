@@ -3,32 +3,14 @@ import Logo from "../../common/Logo/Logo";
 import Navigation from "../../features/Navigation/Navigation";
 import NavigationDesktop from "../../features/NavigationDesktop/NavigationDesktop";
 import { IoMenuSharp } from "react-icons/io5";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import useMediaQuery from "../../../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
 const Header: React.FC = () => {
   const [isNavShown, setIsNavShown] = useState(false);
-  const [desktop, setDesktop] = useState(false);
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width: 62rem)");
-
-    const handleResize = () => {
-      if (mediaQuery.matches) {
-        setDesktop(true);
-      } else {
-        setDesktop(false);
-      }
-    };
-
-    handleResize();
-    mediaQuery.addEventListener("change", handleResize);
-
-    return () => {
-      mediaQuery.removeEventListener("change", handleResize);
-    };
-  }, [desktop]);
+  const desktop = useMediaQuery("(min-width: 62rem)");
 
   const handleNavShown = () => {
     setIsNavShown(!isNavShown);
@@ -42,9 +24,9 @@ const Header: React.FC = () => {
           Radosław <br />
           Kurzeja
         </h1>
-      </Link>{" "}
+      </Link>
       {!desktop && (
-        <div>
+        <>
           <Button
             content={<IoMenuSharp />}
             onClick={handleNavShown}
@@ -52,7 +34,7 @@ const Header: React.FC = () => {
             ariaLabel="show navigation"
           />
           <Navigation isNavShown={isNavShown} setIsNavShown={setIsNavShown} />
-        </div>
+        </>
       )}
       {desktop && <NavigationDesktop />}
     </header>

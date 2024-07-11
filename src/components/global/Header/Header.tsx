@@ -25,18 +25,20 @@ const Header: React.FC = () => {
           Kurzeja
         </h1>
       </Link>
-      {!desktop && (
-        <>
-          <Button
-            content={<IoMenuSharp />}
-            onClick={handleNavShown}
-            variant="navigation_btn"
-            ariaLabel="show navigation"
-          />
-          <Navigation isNavShown={isNavShown} setIsNavShown={setIsNavShown} />
-        </>
-      )}
-      {desktop && <NavigationDesktop />}
+      <div className={styles.header__nav}>
+        {!desktop && (
+          <>
+            <Button
+              content={<IoMenuSharp />}
+              onClick={handleNavShown}
+              variant="navigation_btn"
+              ariaLabel="show navigation"
+            />
+            <Navigation isNavShown={isNavShown} setIsNavShown={setIsNavShown} />
+          </>
+        )}
+        {desktop && <NavigationDesktop />}
+      </div>
     </header>
   );
 };

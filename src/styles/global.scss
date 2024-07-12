@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  max-width: 1200px;
+  margin: ($basic-size * 3) auto 0 auto;
 }
 
 h1 {
@@ -26,6 +26,6 @@ a {
 
 @media (min-width: 37.5rem) {
   main {
-    margin-top: $header-height;
+    margin: ($header-height + $basic-size * 4) auto 0 auto;
   }
 }

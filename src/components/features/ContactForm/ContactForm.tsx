@@ -3,11 +3,13 @@ import styles from "./ContactForm.module.scss";
 import Button from "../../common/Button/Button";
 import FormField from "../../common/FormField/FormField";
 
-const ContactForm: React.FC = () => {
+interface ContactFormProps {
+  setSuccess: (success: boolean) => void;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({ setSuccess }) => {
   const [state, handleSubmit] = useForm("meojoebq");
-  if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  if (state.succeeded) setSuccess(true);
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>

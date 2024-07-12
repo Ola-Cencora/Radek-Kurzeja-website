@@ -10,7 +10,7 @@ body {
 }
 
 main {
-  margin: ($basic-size * 3) auto 0 auto;
+  margin: ($basic-size * 3) auto ($basic-size * 3) auto;
 }
 
 h1 {
@@ -26,6 +26,6 @@ a {
 
 @media (min-width: 37.5rem) {
   main {
-    margin: ($header-height + $basic-size * 4) auto 0 auto;
+    margin: ($header-height + $basic-size * 4) auto ($basic-size * 3) auto;
   }
 }

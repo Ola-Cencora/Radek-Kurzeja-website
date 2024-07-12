@@ -1,6 +1,7 @@
 import FormLabel from "../FormLabel/FormLabel";
 import FormInput from "../FormInput/FormInput";
 import FormTextarea from "../FormTextarea/FormTextarea";
+import styles from "./FormField.module.scss";
 
 interface FormFieldProps {
   id: string;
@@ -18,7 +19,7 @@ const FormField: React.FC<FormFieldProps> = ({
   input,
 }) => {
   return (
-    <>
+    <div className={styles.field}>
       <FormLabel label={name} />
       {input === "input" && (
         <FormInput
@@ -31,7 +32,7 @@ const FormField: React.FC<FormFieldProps> = ({
       {input === "textarea" && (
         <FormTextarea id={id} name={name} required={required} />
       )}
-    </>
+    </div>
   );
 };
 

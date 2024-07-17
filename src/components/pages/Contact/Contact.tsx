@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const Contact: React.FC = () => {
   const [success, setSuccess] = useState(false);
-  console.log(success);
 
   return (
     <section className={styles.contact}>
+      <h1>Contact</h1>
       {!success && <ContactForm setSuccess={setSuccess} />}
       {success && (
         <div className={styles.contact__success}>

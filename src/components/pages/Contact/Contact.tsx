@@ -8,8 +8,12 @@ const Contact: React.FC = () => {
 
   return (
     <section className={styles.contact}>
-      <ContactForm setSuccess={setSuccess} />
-      {success && <div>udało się</div>}
+      {!success && <ContactForm setSuccess={setSuccess} />}
+      {success && (
+        <div className={styles.contact__success}>
+          Thank you, the message has been sent!
+        </div>
+      )}
     </section>
   );
 };

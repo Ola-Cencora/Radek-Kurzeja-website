@@ -2,6 +2,13 @@
 
 .contact {
   width: 90vw;
+
+  &__success {
+    border: 2px solid $color-dark;
+    border-radius: $border-radius;
+    padding: 10%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 37.5rem) {

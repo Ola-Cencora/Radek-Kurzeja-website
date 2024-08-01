@@ -1,0 +1,7 @@
+@import './../../../styles/variables.scss';
+
+.players {
+  display: flex;
+  flex-direction: column;
+  gap: $basic-size;
+}

@@ -1,5 +1,12 @@
+import MusicPlayersList from "../../features/MusicPlayersList/MusicPlayersList";
+
 const Music: React.FC = () => {
-  return <h1>Music</h1>;
+  return (
+    <section>
+      <h1>Music</h1>
+      <MusicPlayersList />
+    </section>
+  );
 };
 
 export default Music;

@@ -1,4 +1,5 @@
 import ContactForm from "../../features/ContactForm/ContactForm";
+import PageTitle from "../../common/PageTitle/PageTitle";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 
@@ -7,7 +8,7 @@ const Contact: React.FC = () => {
 
   return (
     <section className={styles.contact}>
-      <h1>Contact</h1>
+      <PageTitle title="Contact" />
       {!success && <ContactForm setSuccess={setSuccess} />}
       {success && (
         <div className={styles.contact__success}>

@@ -1,5 +1,7 @@
+import PageTitle from "../../common/PageTitle/PageTitle";
+
 const About: React.FC = () => {
-  return <h1>About</h1>;
+  return <PageTitle title="About" />;
 };
 
 export default About;

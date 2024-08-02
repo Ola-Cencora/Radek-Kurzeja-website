@@ -1,10 +1,11 @@
 import MusicPlayersList from "../../features/MusicPlayersList/MusicPlayersList";
+import PageTitle from "../../common/PageTitle/PageTitle";
 import styles from "./Music.module.scss";
 
 const Music: React.FC = () => {
   return (
     <section>
-      <h1>Music</h1>
+      <PageTitle title="Music" />
       <div className={styles.columns}>
         <div className={styles.columns__photo}>
           <img

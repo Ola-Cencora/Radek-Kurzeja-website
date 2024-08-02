@@ -1,5 +1,7 @@
+import PageTitle from "../../common/PageTitle/PageTitle";
+
 const Gallery: React.FC = () => {
-  return <h1>Gallery</h1>;
+  return <PageTitle title="Gallery" />;
 };
 
 export default Gallery;

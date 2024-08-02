@@ -1,9 +1,15 @@
 @import './../../../styles/variables.scss';
 
 .link {
-  transition: $transition-shadow;
+  transition: $transition-color;
 
   &:hover, &___active {
-    text-shadow: .5px 0 currentColor, -.5px 0 currentColor, 0 .5px currentColor, 0 -.5px currentColor;
+    color: $color-light;
   }
-}    
+}
+
+@media (min-width: 62rem) {
+  .link:hover, .link___active {
+    color: $color;
+  }
+}

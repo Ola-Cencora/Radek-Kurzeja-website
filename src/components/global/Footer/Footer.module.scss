@@ -2,4 +2,38 @@
 
 .footer {
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 $basic-size;
+
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: $basic-size
+  }
+
+  &__copy {
+    display: none;
+  }
+}
+
+@media (min-width: 37.5rem) {
+
+  .footer {
+    flex-direction: row;
+    align-items: center;
+
+    &__icons {
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    &__copy {
+      display: block;
+      font-size: .5rem;
+    }
+  }
 }

@@ -1,0 +1,19 @@
+@import './../../../styles/variables.scss';
+
+.link {
+  transition: $transition-color;
+
+  &:hover {
+    color: $color;
+  }
+
+  &__name {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+}

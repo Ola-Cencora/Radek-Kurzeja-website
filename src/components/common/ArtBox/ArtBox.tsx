@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
+import { WorkData } from "../../pages/Gallery/galleryData";
 
-const ArtBox: React.FC = () => {
-  //ArtBox odbiera dane o pojedynczym obrazie i wyświetla: obraz, tytuł oraz przenosi do odpowiedniej podstrony
+const ArtBox: React.FC<WorkData> = ({ id, title, src }) => {
   return (
     <div>
-      <h3>single art title</h3>
-      <Link to="1">
-        <p>image, title on hover</p>
+      <h3>{title}</h3>
+      <Link to={id}>
+        <img src={src} alt={title} />
       </Link>
     </div>
   );

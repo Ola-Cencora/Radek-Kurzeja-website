@@ -1,14 +1,14 @@
 import PageTitle from "../../common/PageTitle/PageTitle";
 import GallerySet from "../../features/GallerySet/GallerySet";
+import galleryData from "./galleryData";
 
 const Gallery: React.FC = () => {
-  //gallery pobiera dane z pliku json, przekazuje je do GallerySet
   return (
     <section>
       <PageTitle title="Gallery" />
-      <GallerySet />
-      <GallerySet />
-      <GallerySet />
+      {galleryData.map(({ setTitle, works }) => (
+        <GallerySet key={setTitle} title={setTitle} works={works} />
+      ))}
     </section>
   );
 };

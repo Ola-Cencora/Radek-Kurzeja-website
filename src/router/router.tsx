@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from "../components/pages/Home/Home";
 import Gallery from "../components/pages/Gallery/Gallery";
+import SingleArt from "../components/pages/SingleArt/SingleArt";
 import Music from "../components/pages/Music/Music";
 import Contact from "../components/pages/Contact/Contact";
 import About from "../components/pages/About/About";
@@ -20,6 +21,7 @@ export const router = createBrowserRouter(
       </Route>
       <Route path="/" element={<RootLayout />}>
         <Route path="gallery" element={<Gallery />} />
+        <Route path="gallery/:id" element={<SingleArt />} />
         <Route path="music" element={<Music />} />
         <Route path="contact" element={<Contact />} />
         <Route path="about" element={<About />} />

@@ -1,0 +1,39 @@
+@import './../../../styles/variables.scss';
+
+.set {
+  margin-bottom: $basic-size * 3;
+
+  &__title {
+    font-weight: $font-light;
+    letter-spacing: .1em;
+    margin-top: 0;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 300px;
+      height: 1px;
+      background-color: $color-dark;
+      left: 0;
+      top: 35px;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: $basic-size;  
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .set__grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+@media (min-width: 62rem) {
+  .set__grid {
+    grid-template-columns: repeat(3, 1fr)
+  }
+}

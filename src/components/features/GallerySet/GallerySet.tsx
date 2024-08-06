@@ -1,5 +1,6 @@
 import ArtBox from "../../common/ArtBox/ArtBox";
 import { WorkData } from "../../pages/Gallery/galleryData";
+import styles from "./GallerySet.module.scss";
 
 interface GallerySetProps {
   title: string;
@@ -8,11 +9,13 @@ interface GallerySetProps {
 
 const GallerySet: React.FC<GallerySetProps> = ({ title, works }) => {
   return (
-    <article>
-      <h2>{title}</h2>
-      {works.map((work) => (
-        <ArtBox key={work.id} {...work} />
-      ))}
+    <article className={styles.set}>
+      <h2 className={styles.set__title}>{title}</h2>
+      <div className={styles.set__grid}>
+        {works.map((work) => (
+          <ArtBox key={work.id} {...work} />
+        ))}
+      </div>
     </article>
   );
 };

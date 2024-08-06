@@ -1,5 +1,7 @@
 import { useParams } from "react-router";
 import galleryData from "../Gallery/galleryData";
+import NotFound from "../NotFound/NotFound";
+import styles from "./SingleArt.module.scss";
 
 const SingleArt: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -8,17 +10,25 @@ const SingleArt: React.FC = () => {
     .find((work) => work.id === id);
 
   if (!art) {
-    return <div>No such artwork</div>;
+    return <NotFound />;
   }
 
   return (
-    <div>
-      <h1>{art.title}</h1>
-      <p>technique: {art.technique}</p>
-      <p>dimensions: {art.dimensions}</p>
-      <p>date: {art.date}</p>
-      <img src={art.src} alt={art.title} />
-    </div>
+    <section className={styles.artwork}>
+      <h1 className={styles.artwork__title}>{art.title}</h1>
+      <div className={styles.artwork__image}>
+        <img
+          className={styles.artwork__image___img}
+          src={art.src}
+          alt={art.title}
+        />
+      </div>
+      <div className={styles.artwork__info}>
+        <p>{art.date}</p>
+        <p>{art.technique}</p>
+        <p>{art.dimensions}</p>
+      </div>
+    </section>
   );
 };
 

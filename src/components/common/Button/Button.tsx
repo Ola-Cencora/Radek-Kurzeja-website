@@ -5,6 +5,7 @@ interface ButtonProps {
   onClick?: () => void;
   ariaLabel?: string;
   variant?: string;
+  disabled?: boolean;
   type?: "button" | "submit" | "reset" | undefined;
 }
 
@@ -13,6 +14,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   ariaLabel,
   variant,
+  disabled,
   type,
 }) => {
   let className = styles.button;
@@ -24,6 +26,7 @@ const Button: React.FC<ButtonProps> = ({
       className={className}
       aria-label={ariaLabel}
       type={type}
+      disabled={disabled}
     >
       {content}
     </button>

@@ -13,8 +13,14 @@
   cursor: pointer;
 
   &:hover {
-      color: $color;
+    color: $color;
   }
+
+  &:disabled {
+    color: transparent;
+    cursor: default;
+  }
+  
 }
 
 .button___navigation {

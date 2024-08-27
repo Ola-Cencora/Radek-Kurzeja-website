@@ -1,8 +1,11 @@
 import PageTitle from "../../common/PageTitle/PageTitle";
 import GallerySet from "../../features/GallerySet/GallerySet";
 import galleryData from "./galleryData";
+import useScroll from "../../../hooks/useScroll";
 
 const Gallery: React.FC = () => {
+  useScroll();
+
   return (
     <section>
       <PageTitle title="Gallery" />

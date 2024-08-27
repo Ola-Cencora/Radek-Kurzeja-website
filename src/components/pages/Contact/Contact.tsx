@@ -2,9 +2,12 @@ import ContactForm from "../../features/ContactForm/ContactForm";
 import PageTitle from "../../common/PageTitle/PageTitle";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
+import useScroll from "../../../hooks/useScroll";
 
 const Contact: React.FC = () => {
   const [success, setSuccess] = useState(false);
+
+  useScroll();
 
   return (
     <section className={styles.contact}>

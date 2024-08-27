@@ -8,11 +8,14 @@ import styles from "./SingleArt.module.scss";
 import { useState } from "react";
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
+import useScroll from "../../../hooks/useScroll";
 
 const SingleArt: React.FC = () => {
   const navigate = useNavigate();
   const [modal, setModal] = useState(false);
   const { id } = useParams<{ id: string }>();
+
+  useScroll(id);
 
   const gallerySet = galleryData.find((set) =>
     set.works.some((work) => work.id === id)

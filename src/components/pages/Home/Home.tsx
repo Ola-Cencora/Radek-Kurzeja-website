@@ -2,6 +2,7 @@ import Navigation from "../../features/Navigation/Navigation";
 import Logo from "../../common/Logo/Logo";
 import { useState } from "react";
 import styles from "./Home.module.scss";
+import useTitle from "../../../hooks/useTitle";
 
 const Home: React.FC = () => {
   const [isNavShown, setIsNavShown] = useState(false);
@@ -9,6 +10,8 @@ const Home: React.FC = () => {
   const handleNavShown = () => {
     setIsNavShown(!isNavShown);
   };
+
+  useTitle();
 
   return (
     <main className={styles.home}>

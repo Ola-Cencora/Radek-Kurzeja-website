@@ -3,11 +3,13 @@ import PageTitle from "../../common/PageTitle/PageTitle";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import useScroll from "../../../hooks/useScroll";
+import useTitle from "../../../hooks/useTitle";
 
 const Contact: React.FC = () => {
   const [success, setSuccess] = useState(false);
 
   useScroll();
+  useTitle("Contact");
 
   return (
     <section className={styles.contact}>

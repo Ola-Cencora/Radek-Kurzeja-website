@@ -9,6 +9,7 @@ import { useState } from "react";
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
 import useScroll from "../../../hooks/useScroll";
+import useTitle from "../../../hooks/useTitle";
 
 const SingleArt: React.FC = () => {
   const navigate = useNavigate();
@@ -21,6 +22,13 @@ const SingleArt: React.FC = () => {
     set.works.some((work) => work.id === id)
   );
   const artIndex = gallerySet?.works.findIndex((work) => work.id === id);
+
+  const title =
+    gallerySet && artIndex !== undefined && artIndex !== -1
+      ? gallerySet.works[artIndex].title
+      : "";
+
+  useTitle(title);
 
   if (!gallerySet || artIndex === undefined || artIndex === -1)
     return <NotFound />;

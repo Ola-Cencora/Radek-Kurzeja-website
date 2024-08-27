@@ -3,9 +3,11 @@ import PageTitle from "../../common/PageTitle/PageTitle";
 import ScrollTopButton from "../../features/ScrollTopButton/ScrollTopButton";
 import styles from "./Music.module.scss";
 import useScroll from "../../../hooks/useScroll";
+import useTitle from "../../../hooks/useTitle";
 
 const Music: React.FC = () => {
   useScroll();
+  useTitle("Music");
 
   return (
     <section>

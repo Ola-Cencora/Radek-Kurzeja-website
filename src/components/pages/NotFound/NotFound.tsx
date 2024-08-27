@@ -1,5 +1,11 @@
+import PageTitle from "../../common/PageTitle/PageTitle";
+
 const NotFound: React.FC = () => {
-  return <h1>NotFound</h1>;
+  return (
+    <div>
+      <PageTitle title="There is no such page" />
+    </div>
+  );
 };
 
 export default NotFound;

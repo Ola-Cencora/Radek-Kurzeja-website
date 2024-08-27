@@ -27,7 +27,7 @@ const Footer: React.FC = () => (
     </div>
     <div className={styles.footer__copy}>
       <a href="https://www.linkedin.com/in/aleksandra-cencora/">
-        design and code by Ola Cencora
+        created by Ola Cencora
       </a>
     </div>
   </footer>

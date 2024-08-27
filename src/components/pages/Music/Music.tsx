@@ -1,5 +1,6 @@
 import MusicPlayersList from "../../features/MusicPlayersList/MusicPlayersList";
 import PageTitle from "../../common/PageTitle/PageTitle";
+import ScrollTopButton from "../../features/ScrollTopButton/ScrollTopButton";
 import styles from "./Music.module.scss";
 import useScroll from "../../../hooks/useScroll";
 
@@ -19,6 +20,7 @@ const Music: React.FC = () => {
         </div>
         <MusicPlayersList />
       </div>
+      <ScrollTopButton />
     </section>
   );
 };

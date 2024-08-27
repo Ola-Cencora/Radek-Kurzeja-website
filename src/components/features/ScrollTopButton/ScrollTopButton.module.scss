@@ -1,0 +1,8 @@
+@import './../../../styles/variables.scss';
+
+.scroll {
+  position: fixed;
+  z-index: 3;
+  bottom: $basic-size * 2;
+  right: $basic-size * 2;
+}

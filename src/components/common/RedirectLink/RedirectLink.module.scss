@@ -1,0 +1,17 @@
+@import './../../../styles/variables.scss';
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: $basic-size / 2;
+  transition: $transition-color;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+.link___justify {
+  @extend .link;
+  justify-content: center;
+}

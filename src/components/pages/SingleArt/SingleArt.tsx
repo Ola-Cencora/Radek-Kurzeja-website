@@ -3,6 +3,7 @@ import galleryData from "../Gallery/galleryData";
 import NotFound from "../NotFound/NotFound";
 import ImageModal from "../../features/ImageModal/ImageModal";
 import Button from "../../common/Button/Button";
+import RedirectLink from "../../common/RedirectLink/RedirectLink";
 import styles from "./SingleArt.module.scss";
 import { useState } from "react";
 import { GrFormPreviousLink } from "react-icons/gr";
@@ -71,6 +72,7 @@ const SingleArt: React.FC = () => {
           <p>{art.technique}</p>
           <p>{art.dimensions}</p>
         </div>
+        <RedirectLink link="/gallery" text="go back to gallery" />
       </div>
     </section>
   );

@@ -43,7 +43,7 @@
   }
 
   &__info {
-    margin-top: $basic-size;
+    margin: $basic-size 0 ($basic-size * 2) 0;
 
     p {
       margin: 0;

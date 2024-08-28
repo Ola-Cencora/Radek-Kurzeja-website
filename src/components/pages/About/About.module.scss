@@ -1,0 +1,14 @@
+@import './../../../styles/variables.scss';
+
+.about {
+  width: 70vw;
+
+  &__txt {
+    font-weight: $font-light;
+    text-align: justify;
+
+    p {
+      margin: 0;
+    }
+  }
+}

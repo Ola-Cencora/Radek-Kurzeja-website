@@ -1,23 +1,8 @@
-@import './../../../styles/variables.scss';
-
-.columns__photo {
-  display: none;
-}
+@import "./../../../styles/variables.scss";
 
 @media (min-width: 62rem) {
-
   .columns {
     display: grid;
     grid-template-columns: 40% 60%;
-    
-    &__photo {
-      display: block;
-
-      &___img {
-        width: 100%;
-        position: sticky;
-        top: 0;
-      }
-    }
   }
 }

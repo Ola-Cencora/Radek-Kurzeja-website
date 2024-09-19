@@ -1,10 +1,10 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 .button {
-  background-color: transparent;
-  color: $color-dark;
+  background-color: $color;
+  color: $color-light;
   border: none;
-  padding: 0;
+  padding: $basic-size;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,11 +20,13 @@
     color: transparent;
     cursor: default;
   }
-  
 }
 
 .button___navigation {
   @extend .button;
+  background-color: transparent;
+  color: $color-dark;
+  padding: 0;
   position: absolute;
   top: $basic-size * 2;
   right: $basic-size * 2;
@@ -32,6 +34,6 @@
 
 @media (min-width: 62rem) {
   .button___navigation {
-    display: none;    
+    display: none;
   }
 }

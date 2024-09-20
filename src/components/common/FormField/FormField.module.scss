@@ -1,0 +1,7 @@
+@import './../../../styles/variables.scss';
+
+.field {
+  margin: $basic-size/2 0;
+  display: flex;
+  flex-direction: column;
+}

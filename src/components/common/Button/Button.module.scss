@@ -1,0 +1,46 @@
+@import "./../../../styles/variables.scss";
+
+.button {
+  background-color: transparent;
+  color: $color-dark;
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: $transition-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-main;
+  }
+
+  &:disabled {
+    color: transparent;
+    cursor: default;
+  }
+}
+
+.button___send {
+  @extend .button;
+  background-color: $color-main;
+  color: $color-light;
+  padding: $basic-size;
+}
+
+.button___navigation {
+  @extend .button;
+  background-color: transparent;
+  color: $color-dark;
+  padding: 0;
+  position: absolute;
+  top: $basic-size * 2;
+  right: $basic-size * 2;
+}
+
+@media (min-width: 62rem) {
+  .button___navigation {
+    display: none;
+  }
+}

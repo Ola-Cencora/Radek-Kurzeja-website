@@ -1,0 +1,13 @@
+@import './../../../styles/variables.scss';
+
+.navigation {
+
+  &__list {
+    display: flex;
+    gap: $basic-size * 3;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    padding: 0 $basic-size * 2 0 0;
+    font-family: $font-header;
+  }
+}

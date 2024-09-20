@@ -1,0 +1,25 @@
+@import "./../../../styles/variables.scss";
+
+.columns__txt {
+  font-weight: $font-light;
+  text-align: justify;
+  width: 70vw;
+  min-width: 280px;
+  max-width: 1000px;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (min-width: 62rem) {
+  .columns {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    &__txt {
+      margin: 0 $basic-size * 7;
+      width: auto;
+    }
+  }
+}

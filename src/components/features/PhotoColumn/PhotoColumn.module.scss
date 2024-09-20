@@ -1,0 +1,17 @@
+@import "./../../../styles/variables.scss";
+
+.photo {
+  display: none;
+}
+
+@media (min-width: 62rem) {
+  .photo {
+    display: block;
+
+    &___img {
+      width: 100%;
+      position: sticky;
+      top: 0;
+    }
+  }
+}

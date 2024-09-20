@@ -1,0 +1,16 @@
+@import "./../../../styles/variables.scss";
+
+.textarea {
+  background-color: $color-light;
+  border: 2px solid;
+  border-color: $color-dark;
+  border-radius: $border-radius;
+  padding: $basic-size;
+  height: $basic-size * 9;
+  margin-top: $basic-size / 4;
+
+  &:focus {
+    border-color: $color-main;
+    outline: none;
+  }
+}

@@ -1,0 +1,40 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-light;
+  color: $color-dark;
+  font-family: $font-text;
+  font-weight: $font-regular;
+}
+
+main {
+  margin: ($basic-size * 3) auto ($basic-size * 3) auto;
+}
+
+h1 {
+  font-family: $font-header;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+@media (min-width: 37.5rem) {
+  main {
+    margin: ($header-height + $basic-size * 4) auto ($basic-size * 3) auto;
+  }
+}

@@ -1,0 +1,10 @@
+@import "./../../../styles/variables.scss";
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-top: $basic-size;
+  }
+}

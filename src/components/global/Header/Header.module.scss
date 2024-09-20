@@ -1,0 +1,33 @@
+@import './../../../styles/variables.scss';
+
+.header {
+  display: flex;
+  height: $header-height;
+  margin: $basic-size;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+
+  &__logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    &___name {
+      font-size: 1rem;
+    }
+  }
+
+  &__nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 37.5rem) {
+  .header {
+    position: fixed;
+    width: 100%;
+  }  
+}

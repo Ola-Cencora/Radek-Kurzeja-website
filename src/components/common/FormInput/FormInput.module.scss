@@ -1,0 +1,15 @@
+@import "./../../../styles/variables.scss";
+
+.input {
+  background-color: $color-light;
+  border: 2px solid;
+  border-color: $color-dark;
+  border-radius: $border-radius;
+  padding: $basic-size;
+  margin-top: $basic-size / 4;
+
+  &:focus {
+    border-color: $color-main;
+    outline: none;
+  }
+}

@@ -1,3 +1,5 @@
+import { IMAGE_SRC } from "../../../config";
+
 export interface WorkData {
   id: string;
   title: string;
@@ -8,18 +10,20 @@ export interface WorkData {
 }
 
 interface SetData {
-  setTitle: string;
+  id: number;
+  gallerySetTitle: string;
   works: WorkData[];
 }
 
 const galleryData: SetData[] = [
   {
-    setTitle: "Landscapes",
+    id: 1,
+    gallerySetTitle: "Landscapes",
     works: [
       {
         id: "lato-17",
         title: "Lato 17",
-        src: `${process.env.PUBLIC_URL}/images/gallery/landscapes/Lato_17.jpg`,
+        src: IMAGE_SRC("gallery/landscapes/Lato_17.jpg"),
         technique: "cienkopis na brystolu",
         dimensions: "50 x 35 cm",
         date: "2017",
@@ -27,7 +31,7 @@ const galleryData: SetData[] = [
       {
         id: "nocny-pejzaz",
         title: "Nocny pejzaż",
-        src: `${process.env.PUBLIC_URL}/images/gallery/landscapes/Nocny_pejzaz.jpg`,
+        src: IMAGE_SRC("gallery/landscapes/Nocny_pejzaz.jpg"),
         technique: "cienkopis na brystolu",
         dimensions: "50 x 70 cm",
         date: "2017",
@@ -35,7 +39,7 @@ const galleryData: SetData[] = [
       {
         id: "patrz-jaka-gora",
         title: "Patrz jaka góra",
-        src: `${process.env.PUBLIC_URL}/images/gallery/landscapes/Patrz_jaka_gora.jpg`,
+        src: IMAGE_SRC("gallery/landscapes/Patrz_jaka_gora.jpg"),
         technique: "cienkopis na brystolu",
         dimensions: "50 x 70 cm",
         date: "2016",
@@ -43,7 +47,7 @@ const galleryData: SetData[] = [
       {
         id: "pustelnia-sw-hieronima",
         title: "Pustelnia św. Hieronima",
-        src: `${process.env.PUBLIC_URL}/images/gallery/landscapes/Pustelnia_sw_Hieronima.jpg`,
+        src: IMAGE_SRC("gallery/landscapes/Pustelnia_sw_Hieronima.jpg"),
         technique: "cienkopis na brystolu",
         dimensions: "50 x 70 cm",
         date: "2015",
@@ -51,7 +55,7 @@ const galleryData: SetData[] = [
       {
         id: "struktura",
         title: "Struktura",
-        src: `${process.env.PUBLIC_URL}/images/gallery/landscapes/Struktura.jpg`,
+        src: IMAGE_SRC("gallery/landscapes/Struktura.jpg"),
         technique: "cienkopis na brystolu",
         dimensions: "35 x 25 cm",
         date: "2016",
@@ -59,12 +63,13 @@ const galleryData: SetData[] = [
     ],
   },
   {
-    setTitle: "Watercolour",
+    id: 2,
+    gallerySetTitle: "Watercolour",
     works: [
       {
         id: "carpenter",
         title: "Carpenter",
-        src: `${process.env.PUBLIC_URL}/images/gallery/watercolour/Carpenter.jpg`,
+        src: IMAGE_SRC("gallery/watercolour/Carpenter.jpg"),
         technique: "akwarela, cienkopis, brystol",
         dimensions: "50 x 50 cm",
         date: "2018",
@@ -72,7 +77,7 @@ const galleryData: SetData[] = [
       {
         id: "dom",
         title: "Dom",
-        src: `${process.env.PUBLIC_URL}/images/gallery/watercolour/Dom.jpg`,
+        src: IMAGE_SRC("gallery/watercolour/Dom.jpg"),
         technique: "akwarela, cienkopis, brystol",
         dimensions: "50 x 50 cm",
         date: "2018-2019",
@@ -80,7 +85,7 @@ const galleryData: SetData[] = [
       {
         id: "pelnia",
         title: "Pełnia",
-        src: `${process.env.PUBLIC_URL}/images/gallery/watercolour/Pelnia.jpg`,
+        src: IMAGE_SRC("gallery/watercolour/Pelnia.jpg"),
         technique: "akwarela, cienkopis, brystol",
         dimensions: "50 x 50 cm",
         date: "2018",
@@ -88,7 +93,7 @@ const galleryData: SetData[] = [
       {
         id: "widok",
         title: "Widok",
-        src: `${process.env.PUBLIC_URL}/images/gallery/watercolour/Widok.jpg`,
+        src: IMAGE_SRC("gallery/watercolour/Widok.jpg"),
         technique: "akwarela, cienkopis, brystol",
         dimensions: "50 x 50 cm",
         date: "2018",
@@ -96,7 +101,7 @@ const galleryData: SetData[] = [
       {
         id: "wulkan",
         title: "Wulkan",
-        src: `${process.env.PUBLIC_URL}/images/gallery/watercolour/Wulkan.jpg`,
+        src: IMAGE_SRC("gallery/watercolour/Wulkan.jpg"),
         technique: "akwarela, cienkopis, brystol",
         dimensions: "50 x 70 cm",
         date: "2017",

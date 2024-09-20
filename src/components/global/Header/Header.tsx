@@ -8,8 +8,8 @@ import useMediaQuery from "../../../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.scss";
 
-const Header: React.FC = () => {
-  const [isNavShown, setIsNavShown] = useState(false);
+const Header = () => {
+  const [isNavShown, setIsNavShown] = useState<boolean>(false);
   const desktop = useMediaQuery("(min-width: 62rem)");
 
   const handleNavShown = () => {
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
         {!desktop && (
           <>
             <Button
-              content={<IoMenuSharp />}
+              children={<IoMenuSharp />}
               onClick={handleNavShown}
               variant="navigation_btn"
               ariaLabel="show navigation"

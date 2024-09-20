@@ -1,12 +1,12 @@
 import styles from "./ImageModal.module.scss";
 
-interface ImageModalProps {
+type ImageModalProps = {
   onClick: () => void;
   src: string;
   alt: string;
-}
+};
 
-const ImageModal: React.FC<ImageModalProps> = ({ onClick, src, alt }) => (
+const ImageModal = ({ onClick, src, alt }: ImageModalProps) => (
   <div className={styles.modal} onClick={onClick}>
     <img className={styles.modal__img} src={src} alt={alt} />
   </div>

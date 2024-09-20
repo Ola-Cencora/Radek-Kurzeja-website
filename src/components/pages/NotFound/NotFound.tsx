@@ -1,10 +1,10 @@
 import PageTitle from "../../common/PageTitle/PageTitle";
 import RedirectLink from "../../common/RedirectLink/RedirectLink";
 
-const NotFound: React.FC = () => (
+const NotFound = () => (
   <section>
     <PageTitle title="There is no such page" />
-    <RedirectLink link="/" text="go to home page" justify={true} />
+    <RedirectLink link="/" children="go to home page" justify={true} />
   </section>
 );
 

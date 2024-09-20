@@ -1,6 +1,6 @@
 $color-dark: #222222; //semi black
-$color-light: #FAFAFA; //semi white
-$color: #749C75; //green
+$color-light: #fafafa; //semi white
+$color-main: #749c75; //green
 
 $font-text: "Lexend Deca", sans-serif;
 $font-header: "Space Grotesk", sans-serif;
@@ -8,8 +8,8 @@ $font-light: 200;
 $font-regular: 400;
 $font-bold: 700;
 
-$transition-color: color .15s linear;
-$transition-overlay: opacity .3s ease;
+$transition-color: color 0.15s linear;
+$transition-overlay: opacity 0.3s ease;
 
 $basic-size: 12px;
 

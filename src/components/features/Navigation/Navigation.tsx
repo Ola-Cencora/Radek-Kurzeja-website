@@ -1,26 +1,23 @@
 import styles from "./Navigation.module.scss";
 import { IoCloseSharp } from "react-icons/io5";
-import NavigationLink from "../../common/NavigationLink/NavigationLink";
+import NavigationLinks from "../../common/NavigationLinks/NavigationLinks";
 import Button from "../../common/Button/Button";
 
-interface NavigationProps {
+type NavigationProps = {
   isNavShown: boolean;
   setIsNavShown: (state: boolean) => void;
-}
+};
 
-const Navigation: React.FC<NavigationProps> = ({
-  isNavShown,
-  setIsNavShown,
-}) => {
+const Navigation = ({ isNavShown, setIsNavShown }: NavigationProps) => {
   return (
     <nav
-      className={`${
+      className={
         isNavShown ? styles.navigation___responsive : styles.navigation
-      }`}
+      }
     >
       <Button
         onClick={() => setIsNavShown(false)}
-        content={<IoCloseSharp />}
+        children={<IoCloseSharp />}
         ariaLabel="close navigation"
         variant="navigation_btn"
       />
@@ -28,10 +25,7 @@ const Navigation: React.FC<NavigationProps> = ({
         onClick={() => setIsNavShown(false)}
         className={styles.navigation__list}
       >
-        <NavigationLink page="about" />
-        <NavigationLink page="gallery" />
-        <NavigationLink page="music" />
-        <NavigationLink page="contact" />
+        <NavigationLinks />
       </ul>
     </nav>
   );

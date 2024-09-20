@@ -2,12 +2,11 @@ import MusicPlayersList from "../../features/MusicPlayersList/MusicPlayersList";
 import PageTitle from "../../common/PageTitle/PageTitle";
 import ScrollTopButton from "../../features/ScrollTopButton/ScrollTopButton";
 import PhotoColumn from "../../features/PhotoColumn/PhotoColumn";
+import { IMAGE_SRC } from "../../../config";
 import styles from "./Music.module.scss";
-import useScroll from "../../../hooks/useScroll";
 import useTitle from "../../../hooks/useTitle";
 
-const Music: React.FC = () => {
-  useScroll();
+const Music = () => {
   useTitle("Music");
 
   return (
@@ -15,7 +14,7 @@ const Music: React.FC = () => {
       <PageTitle title="Music" />
       <div className={styles.columns}>
         <PhotoColumn
-          src={`${process.env.PUBLIC_URL}/images/music.jpg`}
+          src={IMAGE_SRC("music.jpg")}
           alt="Radosław Kurzeja playing a concert"
         />
         <MusicPlayersList />

@@ -2,13 +2,11 @@ import ContactForm from "../../features/ContactForm/ContactForm";
 import PageTitle from "../../common/PageTitle/PageTitle";
 import styles from "./Contact.module.scss";
 import { useState } from "react";
-import useScroll from "../../../hooks/useScroll";
 import useTitle from "../../../hooks/useTitle";
 
-const Contact: React.FC = () => {
-  const [success, setSuccess] = useState(false);
+const Contact = () => {
+  const [success, setSuccess] = useState<boolean>(false);
 
-  useScroll();
   useTitle("Contact");
 
   return (

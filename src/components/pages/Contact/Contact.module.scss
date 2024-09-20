@@ -1,7 +1,9 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 .contact {
   width: 90vw;
+  min-width: 300px;
+  max-width: 800px;
 
   &__success {
     border: 2px solid $color-dark;

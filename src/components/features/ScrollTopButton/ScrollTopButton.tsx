@@ -3,8 +3,9 @@ import Button from "../../common/Button/Button";
 import { GrLinkUp } from "react-icons/gr";
 import styles from "./ScrollTopButton.module.scss";
 
-const ScrollTopButton: React.FC = () => {
-  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+const ScrollTopButton = () => {
+  const [showScrollTopButton, setShowScrollTopButton] =
+    useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +35,7 @@ const ScrollTopButton: React.FC = () => {
       {showScrollTopButton && (
         <Button
           type="button"
-          content={<GrLinkUp />}
+          children={<GrLinkUp />}
           onClick={scrollTop}
           ariaLabel="go to the top of the page"
         />

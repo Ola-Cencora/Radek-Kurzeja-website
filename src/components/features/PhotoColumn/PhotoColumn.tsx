@@ -1,11 +1,11 @@
 import styles from "./PhotoColumn.module.scss";
 
-interface PhotoColumnProps {
+type PhotoColumnProps = {
   src: string;
   alt: string;
-}
+};
 
-const PhotoColumn: React.FC<PhotoColumnProps> = ({ src, alt }) => (
+const PhotoColumn = ({ src, alt }: PhotoColumnProps) => (
   <div className={styles.photo}>
     <img src={src} alt={alt} className={styles.photo___img} />
   </div>

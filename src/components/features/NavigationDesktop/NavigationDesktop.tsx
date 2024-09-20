@@ -1,14 +1,11 @@
 import styles from "./NavigationDesktop.module.scss";
-import NavigationLink from "../../common/NavigationLink/NavigationLink";
+import NavigationLinks from "../../common/NavigationLinks/NavigationLinks";
 
-const NavigationDesktop: React.FC = () => {
+const NavigationDesktop = () => {
   return (
     <nav className={styles.navigation}>
       <ul className={styles.navigation__list}>
-        <NavigationLink page="about" />
-        <NavigationLink page="gallery" />
-        <NavigationLink page="music" />
-        <NavigationLink page="contact" />
+        <NavigationLinks />
       </ul>
     </nav>
   );

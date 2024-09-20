@@ -1,13 +1,13 @@
 import styles from "./FormInput.module.scss";
 
-interface FormInputProps {
+type FormInputProps = {
   id: string;
   type: string;
   name: string;
   required: boolean;
-}
+};
 
-const FormInput: React.FC<FormInputProps> = ({ id, type, name, required }) => {
+const FormInput = ({ id, type, name, required }: FormInputProps) => {
   return (
     <input
       className={styles.input}

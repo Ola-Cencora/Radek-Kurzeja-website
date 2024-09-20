@@ -1,4 +1,4 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 .box {
   width: 300px;
@@ -17,7 +17,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: $color;
+      background-color: $color-main;
       opacity: 0;
       display: flex;
       justify-content: center;
@@ -29,13 +29,11 @@
       font-size: 1rem;
       color: $color-light;
       font-weight: $font-light;
-      letter-spacing: .1em;
+      letter-spacing: 0.1em;
     }
-
   }
 
   &:hover &__img__overlay {
-    opacity: .9;
+    opacity: 0.9;
   }
-
 }

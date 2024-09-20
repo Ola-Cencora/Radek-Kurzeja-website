@@ -3,24 +3,18 @@ import FormInput from "../FormInput/FormInput";
 import FormTextarea from "../FormTextarea/FormTextarea";
 import styles from "./FormField.module.scss";
 
-interface FormFieldProps {
+type FormFieldProps = {
   id: string;
-  type?: string;
+  type?: "text" | "email";
   name: string;
   required: boolean;
   input: "input" | "textarea";
-}
+};
 
-const FormField: React.FC<FormFieldProps> = ({
-  id,
-  type,
-  name,
-  required,
-  input,
-}) => {
+const FormField = ({ id, type, name, required, input }: FormFieldProps) => {
   return (
     <div className={styles.field}>
-      <FormLabel label={name} />
+      <FormLabel id={id} label={name} />
       {input === "input" && (
         <FormInput
           id={id}

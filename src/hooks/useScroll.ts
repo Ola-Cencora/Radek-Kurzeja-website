@@ -1,9 +1,12 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router";
 
-const useScroll = (id?: string) => {
+const useScroll = () => {
+  const { pathname } = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);  
+  }, [pathname]);  
 };
 
 export default useScroll;

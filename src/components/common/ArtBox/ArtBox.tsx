@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { WorkData } from "../../pages/Gallery/galleryData";
 import styles from "./ArtBox.module.scss";
 
-const ArtBox: React.FC<WorkData> = ({ id, title, src }) => {
+const ArtBox = ({ id, title, src }: WorkData) => {
   return (
     <Link className={styles.box} to={id}>
       <img className={styles.box__img} src={src} alt={title} />

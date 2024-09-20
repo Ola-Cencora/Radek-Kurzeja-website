@@ -1,4 +1,4 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 .textarea {
   background-color: $color-light;
@@ -10,7 +10,7 @@
   margin-top: $basic-size / 4;
 
   &:focus {
-    border-color: $color;
+    border-color: $color-main;
     outline: none;
   }
 }

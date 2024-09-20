@@ -4,8 +4,8 @@ import { useState } from "react";
 import styles from "./Home.module.scss";
 import useTitle from "../../../hooks/useTitle";
 
-const Home: React.FC = () => {
-  const [isNavShown, setIsNavShown] = useState(false);
+const Home = () => {
+  const [isNavShown, setIsNavShown] = useState<boolean>(false);
 
   const handleNavShown = () => {
     setIsNavShown(!isNavShown);

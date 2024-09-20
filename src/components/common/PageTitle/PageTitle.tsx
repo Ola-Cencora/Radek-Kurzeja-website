@@ -1,10 +1,10 @@
 import styles from "./PageTitle.module.scss";
 
-interface PageTitleProps {
+type PageTitleProps = {
   title: string;
-}
+};
 
-const PageTitle: React.FC<PageTitleProps> = ({ title }) => (
+const PageTitle = ({ title }: PageTitleProps) => (
   <h1 className={styles.title}>{title}</h1>
 );
 

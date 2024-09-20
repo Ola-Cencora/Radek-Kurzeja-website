@@ -1,12 +1,12 @@
 import styles from "./FormTextarea.module.scss";
 
-interface FormTextareaProps {
+type FormTextareaProps = {
   id: string;
   name: string;
   required: boolean;
-}
+};
 
-const FormTextarea: React.FC<FormTextareaProps> = ({ id, name, required }) => {
+const FormTextarea = ({ id, name, required }: FormTextareaProps) => {
   return (
     <textarea
       className={styles.textarea}

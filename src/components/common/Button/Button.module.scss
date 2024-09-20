@@ -1,10 +1,10 @@
 @import "./../../../styles/variables.scss";
 
 .button {
-  background-color: $color;
-  color: $color-light;
+  background-color: transparent;
+  color: $color-dark;
+  padding: 0;
   border: none;
-  padding: $basic-size;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,13 +13,20 @@
   cursor: pointer;
 
   &:hover {
-    color: $color;
+    color: $color-main;
   }
 
   &:disabled {
     color: transparent;
     cursor: default;
   }
+}
+
+.button___send {
+  @extend .button;
+  background-color: $color-main;
+  color: $color-light;
+  padding: $basic-size;
 }
 
 .button___navigation {

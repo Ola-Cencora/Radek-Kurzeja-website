@@ -1,7 +1,9 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 .wrapper {
   width: 90vw;
+  min-width: 300px;
+  max-width: 2000px;
 }
 
 .buttons {
@@ -12,11 +14,12 @@
 
 .artwork {
   width: 90vw;
+  min-width: 300px;
   margin: 0 auto;
 
   &__title {
     font-weight: $font-regular;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-size: 1.5rem;
     text-align: start;
     position: relative;
@@ -28,9 +31,8 @@
       height: 1px;
       background-color: $color-dark;
       left: 0;
-      bottom: - $basic-size / 3;
+      bottom: -$basic-size / 3;
     }
-
   }
 
   &__image {
@@ -55,5 +57,5 @@
 @media (min-width: 62rem) {
   .artwork {
     width: 60vw;
-  }  
+  }
 }

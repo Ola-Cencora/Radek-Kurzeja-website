@@ -3,11 +3,11 @@ import styles from "./ContactForm.module.scss";
 import Button from "../../common/Button/Button";
 import FormField from "../../common/FormField/FormField";
 
-interface ContactFormProps {
+type ContactFormProps = {
   setSuccess: (success: boolean) => void;
-}
+};
 
-const ContactForm: React.FC<ContactFormProps> = ({ setSuccess }) => {
+const ContactForm = ({ setSuccess }: ContactFormProps) => {
   const [state, handleSubmit] = useForm("meojoebq");
   if (state.succeeded) setSuccess(true);
 
@@ -34,7 +34,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ setSuccess }) => {
       <FormField id="message" name="message" required={true} input="textarea" />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-      <Button content="send" type="submit" />
+      <Button variant="send_btn" children="send" type="submit" />
     </form>
   );
 };

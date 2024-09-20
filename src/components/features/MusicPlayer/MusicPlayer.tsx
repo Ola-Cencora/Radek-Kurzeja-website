@@ -1,17 +1,13 @@
 import styles from "./MusicPlayer.module.scss";
 
-interface MusicPlayerProps {
+type MusicPlayerProps = {
   title: string;
   src: string;
   href: string;
   albumTitle: string;
-}
-const MusicPlayer: React.FC<MusicPlayerProps> = ({
-  title,
-  src,
-  href,
-  albumTitle,
-}) => {
+};
+
+const MusicPlayer = ({ title, src, href, albumTitle }: MusicPlayerProps) => {
   return (
     <div className={styles.player}>
       <h2 className={styles.player__title}>{albumTitle}</h2>

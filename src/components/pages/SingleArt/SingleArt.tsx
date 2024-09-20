@@ -8,15 +8,12 @@ import styles from "./SingleArt.module.scss";
 import { useState } from "react";
 import { GrFormPreviousLink } from "react-icons/gr";
 import { GrFormNextLink } from "react-icons/gr";
-import useScroll from "../../../hooks/useScroll";
 import useTitle from "../../../hooks/useTitle";
 
-const SingleArt: React.FC = () => {
+const SingleArt = () => {
   const navigate = useNavigate();
-  const [modal, setModal] = useState(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
   const { id } = useParams<{ id: string }>();
-
-  useScroll(id);
 
   const gallerySet = galleryData.find((set) =>
     set.works.some((work) => work.id === id)
@@ -49,13 +46,13 @@ const SingleArt: React.FC = () => {
     <section className={styles.wrapper}>
       <div className={styles.buttons}>
         <Button
-          content={<GrFormPreviousLink />}
+          children={<GrFormPreviousLink />}
           onClick={handlePrev}
           ariaLabel="see previous artwork"
           disabled={!prevArt}
         />
         <Button
-          content={<GrFormNextLink />}
+          children={<GrFormNextLink />}
           onClick={handleNext}
           ariaLabel="see next artwork"
           disabled={!nextArt}
@@ -63,9 +60,9 @@ const SingleArt: React.FC = () => {
       </div>
       <div className={styles.artwork}>
         <h1 className={styles.artwork__title}>{art.title}</h1>
-        {modal && (
+        {showModal && (
           <ImageModal
-            onClick={() => setModal(false)}
+            onClick={() => setShowModal(false)}
             src={art.src}
             alt={art.title}
           />
@@ -75,7 +72,7 @@ const SingleArt: React.FC = () => {
             className={styles.artwork__image___img}
             src={art.src}
             alt={art.title}
-            onClick={() => setModal(true)}
+            onClick={() => setShowModal(true)}
           />
         </div>
         <div className={styles.artwork__info}>
@@ -83,7 +80,7 @@ const SingleArt: React.FC = () => {
           <p>{art.technique}</p>
           <p>{art.dimensions}</p>
         </div>
-        <RedirectLink link="/gallery" text="go back to gallery" />
+        <RedirectLink link="/gallery" children="go back to gallery" />
       </div>
     </section>
   );

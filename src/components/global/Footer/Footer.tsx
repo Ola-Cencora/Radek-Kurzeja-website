@@ -4,7 +4,7 @@ import { SiFacebook } from "react-icons/si";
 import { SiBandcamp } from "react-icons/si";
 import styles from "./Footer.module.scss";
 
-const Footer: React.FC = () => (
+const Footer = () => (
   <footer className={styles.footer}>
     <div>
       <ul className={styles.footer__icons}>

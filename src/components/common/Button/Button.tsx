@@ -1,23 +1,24 @@
 import styles from "./Button.module.scss";
 
-interface ButtonProps {
-  content: string | React.ReactNode;
+type ButtonProps = {
+  children: React.ReactNode;
   onClick?: () => void;
   ariaLabel?: string;
   variant?: string;
   disabled?: boolean;
-  type?: "button" | "submit" | "reset" | undefined;
-}
+  type?: "button" | "submit" | "reset";
+};
 
-const Button: React.FC<ButtonProps> = ({
-  content,
+const Button = ({
+  children,
   onClick,
   ariaLabel,
   variant,
   disabled,
   type,
-}) => {
+}: ButtonProps) => {
   let className = styles.button;
+  if (variant === "send_btn") className = styles.button___send;
   if (variant === "navigation_btn") className = styles.button___navigation;
 
   return (
@@ -28,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={disabled}
     >
-      {content}
+      {children}
     </button>
   );
 };

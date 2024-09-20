@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import { GrFormPreviousLink } from "react-icons/gr";
 import styles from "./RedirectLink.module.scss";
 
-interface RedirectLinkProps {
+type RedirectLinkProps = {
   link: string;
-  text: string;
+  children: React.ReactNode;
   justify?: boolean;
-}
+};
 
-const RedirectLink: React.FC<RedirectLinkProps> = ({ link, text, justify }) => (
+const RedirectLink = ({ link, children, justify }: RedirectLinkProps) => (
   <Link to={link} className={justify ? styles.link___justify : styles.link}>
     <GrFormPreviousLink />
-    {text}
+    {children}
   </Link>
 );
 

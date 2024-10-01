@@ -3,7 +3,7 @@
 .link {
   display: flex;
   align-items: center;
-  gap: $basic-size / 2;
+  gap: calc($basic-size / 2);
   transition: $transition-color;
 
   &:hover {

@@ -13,6 +13,6 @@ $transition-overlay: opacity 0.3s ease;
 
 $basic-size: 12px;
 
-$border-radius: $basic-size / 4;
+$border-radius: calc($basic-size / 4);
 
 $header-height: $basic-size * 6;

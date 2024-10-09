@@ -6,7 +6,7 @@
   border-color: $color-dark;
   border-radius: $border-radius;
   padding: $basic-size;
-  margin-top: $basic-size / 4;
+  margin-top: calc($basic-size / 4);
 
   &:focus {
     border-color: $color-main;

@@ -58,5 +58,16 @@
   .artwork {
     width: 60vw;
     max-width: 1000px;
+    margin-top: $basic-size * 5;
+  }
+
+  .buttons {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    left: 0;
+    width: 90%;
+    z-index: 5;
+    margin: 0 auto;
   }
 }

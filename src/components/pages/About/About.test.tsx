@@ -19,7 +19,7 @@ describe("About Page", () => {
 
     const image = screen.getByAltText(/radosław kurzeja playing a concert/i);
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute("src", IMAGE_SRC("music.jpg"));
+    expect(image).toHaveAttribute("src", IMAGE_SRC("about.jpg"));
   });
 
   it("renders all paragraphs from aboutTxt", () => {

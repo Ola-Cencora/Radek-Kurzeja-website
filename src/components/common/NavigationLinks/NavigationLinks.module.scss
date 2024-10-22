@@ -14,8 +14,10 @@ li {
 }
 
 @media (min-width: 62rem) {
-  .link:hover,
-  .link___active {
-    color: $color-main;
+  li {
+    .link:hover,
+    .link___active {
+      color: $color-main;
+    }
   }
 }

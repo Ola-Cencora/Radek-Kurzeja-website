@@ -73,6 +73,7 @@ const SingleArt = () => {
             src={art.src}
             alt={art.title}
             onClick={() => setShowModal(true)}
+            loading="lazy"
           />
         </div>
         <div className={styles.artwork__info}>

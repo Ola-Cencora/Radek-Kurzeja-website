@@ -5,7 +5,7 @@ import styles from "./ArtBox.module.scss";
 const ArtBox = ({ id, title, src }: WorkData) => {
   return (
     <Link className={styles.box} to={id}>
-      <img className={styles.box__img} src={src} alt={title} />
+      <img className={styles.box__img} src={src} alt={title} loading="lazy" />
       <div className={styles.box__img__overlay}>
         <h3 className={styles.box__img__title}>{title}</h3>
       </div>

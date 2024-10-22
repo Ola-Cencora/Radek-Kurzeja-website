@@ -7,7 +7,7 @@ type PhotoColumnProps = {
 
 const PhotoColumn = ({ src, alt }: PhotoColumnProps) => (
   <div className={styles.photo}>
-    <img src={src} alt={alt} className={styles.photo___img} />
+    <img src={src} alt={alt} className={styles.photo___img} loading="lazy" />
   </div>
 );
 

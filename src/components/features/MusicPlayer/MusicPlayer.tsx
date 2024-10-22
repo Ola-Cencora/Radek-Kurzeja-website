@@ -11,7 +11,13 @@ const MusicPlayer = ({ title, src, href, albumTitle }: MusicPlayerProps) => {
   return (
     <div className={styles.player}>
       <h2 className={styles.player__title}>{albumTitle}</h2>
-      <iframe title={title} className={styles.player__box} src={src} seamless>
+      <iframe
+        title={title}
+        className={styles.player__box}
+        src={src}
+        loading="lazy"
+        seamless
+      >
         <a href={href}>{title}</a>
       </iframe>
     </div>

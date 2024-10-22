@@ -6,15 +6,16 @@ const NavigationLinks = () => {
   return (
     <>
       {navigationLinksList.map(({ id, page }) => (
-        <NavLink
-          key={id}
-          to={`/${page}`}
-          className={({ isActive }) =>
-            isActive ? styles.link___active : styles.link
-          }
-        >
-          {page}
-        </NavLink>
+        <li key={id}>
+          <NavLink
+            to={`/${page}`}
+            className={({ isActive }) =>
+              isActive ? styles.link___active : styles.link
+            }
+          >
+            {page}
+          </NavLink>
+        </li>
       ))}
     </>
   );

@@ -1,11 +1,15 @@
 @import "./../../../styles/variables.scss";
 
-.link {
-  transition: $transition-color;
+li {
+  list-style-type: none;
 
-  &:hover,
-  &___active {
-    color: $color-light;
+  .link {
+    transition: $transition-color;
+
+    &:hover,
+    &___active {
+      color: $color-light;
+    }
   }
 }
 

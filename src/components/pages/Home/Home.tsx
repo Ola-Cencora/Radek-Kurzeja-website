@@ -14,12 +14,12 @@ const Home = () => {
   useTitle();
 
   return (
-    <main className={styles.home}>
+    <div className={styles.home}>
       <div className={styles.home__logo}>
         <Logo onClick={handleNavShown} alt="show navigation" />
       </div>
       <Navigation isNavShown={isNavShown} setIsNavShown={setIsNavShown} />
-    </main>
+    </div>
   );
 };
 

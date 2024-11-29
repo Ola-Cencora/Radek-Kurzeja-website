@@ -6,7 +6,7 @@ Project is created with React and Typescript to ensure better type safety. Most 
 
 ## WWW
 
-[Radoslaw Kurzeja](https://radoslawkurzeja.netlify.app/)
+[Radoslaw Kurzeja](https://radoslawkurzeja.com/)
 
 ### Technologies
 

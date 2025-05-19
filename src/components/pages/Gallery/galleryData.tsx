@@ -18,6 +18,166 @@ interface SetData {
 const galleryData: SetData[] = [
   {
     id: 1,
+    gallerySetTitle: "Nowa seria",
+    works: [
+      {
+        id: "pierwszy",
+        title: "Pierwszy / The first",
+        src: IMAGE_SRC("gallery/nowa_seria/Pierwszy.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "23 x 17,5 cm",
+        date: "2023",
+      },
+      {
+        id: "przyblizenia",
+        title: "Przybliżenia / Approaches",
+        src: IMAGE_SRC("gallery/nowa_seria/Przyblizenia.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "20 x 28 cm",
+        date: "2023",
+      },
+      {
+        id: "naczynia",
+        title: "Naczynia / Vessels",
+        src: IMAGE_SRC("gallery/nowa_seria/Naczynia.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "21 x 29,5 cm",
+        date: "2023",
+      },
+      {
+        id: "umiar",
+        title: "Umiar / Mildness",
+        src: IMAGE_SRC("gallery/nowa_seria/Umiar.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "28 x 35,5 cm",
+        date: "2023",
+      },
+      {
+        id: "kierunek",
+        title: "Kierunek / Direction",
+        src: IMAGE_SRC("gallery/nowa_seria/Kierunek.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "38 x 28 cm",
+        date: "2023",
+      },
+      {
+        id: "w-objeciach",
+        title: "W objęciach / In embrace",
+        src: IMAGE_SRC("gallery/nowa_seria/W_objeciach.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "25,5 x 30,5 cm",
+        date: "2023",
+      },
+      {
+        id: "analogia",
+        title: "Analogia / Analogy",
+        src: IMAGE_SRC("gallery/nowa_seria/Analogia.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "23 x 17 cm",
+        date: "2023",
+      },
+      {
+        id: "inna-pociecha",
+        title: "Inna Pociecha / Other Solace",
+        src: IMAGE_SRC("gallery/nowa_seria/Inna_Pociecha.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "25 x 48 cm",
+        date: "2023",
+      },
+      {
+        id: "modlitwa-o-zdrowie",
+        title: "Modlitwa o zdrowie dla Przemka / Prayer for Przemek's health",
+        src: IMAGE_SRC("gallery/nowa_seria/Modlitwa_o_zdrowie_dla_Przemka.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "15 x 20 cm",
+        date: "2023",
+      },
+      {
+        id: "oblok-niewiedzy",
+        title:
+          "Obłok Niewiedzy albo Modlitwa o uzdrowienie dla Przemka / Cloud of Unknow or Prayer for Przemek's healing",
+        src: IMAGE_SRC("gallery/nowa_seria/Oblok_Niewiedzy.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "25 x 20 cm",
+        date: "2023",
+      },
+      {
+        id: "modlitwa-za-przemka",
+        title: "Modlitwa za Przemka / Prayer for Przemek",
+        src: IMAGE_SRC("gallery/nowa_seria/Modlitwa_za_Przemka.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "38 x 30,5 cm",
+        date: "2024",
+      },
+      {
+        id: "to-ja",
+        title: "To ja, nie bójcie się / It is me, do not be afraid",
+        src: IMAGE_SRC("gallery/nowa_seria/To_ja_nie_bojcie_sie.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "20 x 27,5 cm",
+        date: "2024",
+      },
+      {
+        id: "o-potyczkach-ii",
+        title: "O potyczkach II / About clash II",
+        src: IMAGE_SRC("gallery/nowa_seria/O_potyczkach_2.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "21 x 29,5 cm",
+        date: "2024",
+      },
+      {
+        id: "sierpniowy",
+        title: "Sierpniowy / August",
+        src: IMAGE_SRC("gallery/nowa_seria/Sierpniowy.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "15 x 10 cm",
+        date: "2024",
+      },
+      {
+        id: "niewiadomy",
+        title: "Niewiadomy / Unknown",
+        src: IMAGE_SRC("gallery/nowa_seria/Niewiadomy.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "30,5 x 25,5 cm",
+        date: "2024",
+      },
+      {
+        id: "oblok-niewiedzy-inny",
+        title: "Obłok Niewiedzy. Inny / Cloud of Unknow. Other",
+        src: IMAGE_SRC("gallery/nowa_seria/Oblok_Niewiedzy_Inny.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "25 x 37 cm",
+        date: "2024",
+      },
+      {
+        id: "adwent",
+        title: "Adwent / Advent",
+        src: IMAGE_SRC("gallery/nowa_seria/Adwent.jpg"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "12 x 12 cm",
+        date: "2024",
+      },
+    ],
+  },
+  {
+    id: 2,
     gallerySetTitle: "Drawings",
     works: [
       {
@@ -169,7 +329,7 @@ const galleryData: SetData[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     gallerySetTitle: "Watercolor",
     works: [
       {

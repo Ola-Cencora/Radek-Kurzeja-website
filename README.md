@@ -25,7 +25,7 @@ To run this project, install it locally using npm:
 ```
 # development
 $ npm install
-$ npm start
+$ npm run start
 
 # build
 $ npm run build

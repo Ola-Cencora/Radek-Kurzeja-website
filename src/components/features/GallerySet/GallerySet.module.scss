@@ -1,11 +1,11 @@
-@import './../../../styles/variables.scss';
+@import "./../../../styles/variables.scss";
 
 .set {
   margin-bottom: $basic-size * 3;
 
   &__title {
     font-weight: $font-light;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     margin-top: 0;
     position: relative;
 
@@ -20,20 +20,35 @@
     }
   }
 
+  &__description {
+    font-weight: $font-light;
+    margin-top: $basic-size;
+    margin-bottom: $basic-size * 2;
+    width: 300px;
+  }
+
   &__grid {
     display: grid;
-    gap: $basic-size;  
+    gap: $basic-size;
   }
 }
 
 @media (min-width: 37.5rem) {
+  .set__description {
+    width: 600px + $basic-size;
+  }
+
   .set__grid {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 62rem) {
+  .set__description {
+    width: 900px + $basic-size * 2;
+  }
+
   .set__grid {
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 }

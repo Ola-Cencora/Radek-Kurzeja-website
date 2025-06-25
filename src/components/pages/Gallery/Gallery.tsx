@@ -10,8 +10,14 @@ const Gallery = () => {
   return (
     <section>
       <PageTitle title="Gallery" />
-      {galleryData.map(({ id, gallerySetTitle, works }) => (
-        <GallerySet key={id} title={gallerySetTitle} works={works} />
+      {galleryData.map(({ id, gallerySetTitle, description_slug, works }) => (
+        <GallerySet
+          key={id}
+          id={id}
+          title={gallerySetTitle}
+          description_slug={description_slug}
+          works={works}
+        />
       ))}
       <ScrollTopButton />
     </section>

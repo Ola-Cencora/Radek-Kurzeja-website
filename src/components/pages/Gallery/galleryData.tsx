@@ -132,6 +132,42 @@ const galleryData: SetData[] = [
         date: "2024",
       },
       {
+        id: "analogia-druga",
+        title: "Analogia Druga / The Second Analogy",
+        src: IMAGE_SRC("gallery/nowa_seria/Analogia_Druga.webp"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "20 x 25 cm",
+        date: "2024",
+      },
+      {
+        id: "analogia-trzecia",
+        title: "Analogia Trzecia / The Third Analogy",
+        src: IMAGE_SRC("gallery/nowa_seria/Analogia_Trzecia.webp"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "26 x 32 cm",
+        date: "2024",
+      },
+      {
+        id: "obiekt",
+        title: "Obiekt / Object",
+        src: IMAGE_SRC("gallery/nowa_seria/Obiekt.webp"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "35 x 28 cm",
+        date: "2024",
+      },
+      {
+        id: "o-potyczkach-i",
+        title: "O potyczkach I / About clash I",
+        src: IMAGE_SRC("gallery/nowa_seria/O_potyczkach_1.webp"),
+        technique:
+          "fine-liner on bristol, passe-partout cut from watercolor paper, vintage frame",
+        dimensions: "21 x 29,5 cm",
+        date: "2024",
+      },
+      {
         id: "o-potyczkach-ii",
         title: "O potyczkach II / About clash II",
         src: IMAGE_SRC("gallery/nowa_seria/O_potyczkach_2.webp"),

@@ -13,18 +13,22 @@ interface SetData {
   id: string;
   gallerySetTitle: string;
   description_slug?: string;
-  description?: string;
+  description?: string[];
   works: WorkData[];
 }
 
 const galleryData: SetData[] = [
   {
-    id: "nowa-seria",
-    gallerySetTitle: "Nowa seria",
+    id: "empty-vessel",
+    gallerySetTitle: "Empty Vessel",
     description_slug:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "The “Empty Vessel” series represents a continuation and a new stage in the artistic path that began thirteen years ago with intuitive landscape drawings...",
+    description: [
+      "The “Empty Vessel” series represents a continuation and a new stage in the artistic path that began thirteen years ago with intuitive landscape drawings.",
+      "The concept of the series draws on the metaphor through which Carl Gustav Jung understood the notion of the archetype. In his view, the archetype resembled an empty form — a vessel of imaginative potentiality, a kind of psychic muscle that precedes the creation of meaning and order.",
+      "Emptiness reveals itself as a positively creative category, much like for the Desert Fathers who sought spiritual renewal precisely in desolate places.",
+      "In the series, the “empty vessels” are geometric forms cut out in passe-partout and then filled with more or less deliberately composed drawings. These works are primarily products of intuition — the result of a kind of impulse in which, nevertheless, structures and a style developed over years of creative practice play an important role.",
+    ],
     works: [
       {
         id: "pierwszy",

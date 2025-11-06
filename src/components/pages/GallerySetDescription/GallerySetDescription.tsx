@@ -4,6 +4,7 @@ import galleryData from "../Gallery/galleryData";
 import useTitle from "../../../hooks/useTitle";
 import { useParams } from "react-router";
 import NotFound from "../NotFound/NotFound";
+import styles from "./GallerySetDescription.module.scss";
 
 const GallerySetDescription = () => {
   const { name } = useParams<{ name: string }>();
@@ -17,9 +18,11 @@ const GallerySetDescription = () => {
   const { gallerySetTitle, description } = gallerySet;
 
   return (
-    <section>
+    <section className={styles.page}>
       <PageTitle title={gallerySetTitle} />
-      <p>{description}</p>
+      {description?.map((p, index) => (
+        <p key={index}>{p}</p>
+      ))}
       <ScrollTopButton />
     </section>
   );

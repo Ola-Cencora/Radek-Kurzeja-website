@@ -6,4 +6,20 @@
   width: 70vw;
   min-width: 280px;
   max-width: 1000px;
+
+  &__imgs {
+    width: 100%;
+    margin-top: $basic-size * 2;
+    display: flex;
+    flex-direction: column;
+    gap: $basic-size;
+
+    &___wrapper {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

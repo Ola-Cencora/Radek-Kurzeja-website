@@ -5,6 +5,7 @@ import useTitle from "../../../hooks/useTitle";
 import { useParams } from "react-router";
 import NotFound from "../NotFound/NotFound";
 import styles from "./GallerySetDescription.module.scss";
+import { IMAGE_SRC } from "../../../config";
 
 const GallerySetDescription = () => {
   const { name } = useParams<{ name: string }>();
@@ -15,7 +16,7 @@ const GallerySetDescription = () => {
 
   if (!gallerySet) return <NotFound />;
 
-  const { gallerySetTitle, description } = gallerySet;
+  const { gallerySetTitle, description, description_imgs } = gallerySet;
 
   return (
     <section className={styles.page}>
@@ -23,6 +24,13 @@ const GallerySetDescription = () => {
       {description?.map((p, index) => (
         <p key={index}>{p}</p>
       ))}
+      <div className={styles.page__imgs}>
+        {description_imgs?.map((img, index) => (
+          <div key={index} className={styles.page__imgs___wrapper}>
+            <img src={IMAGE_SRC(img)} alt="Radosław Kurzeja" />
+          </div>
+        ))}
+      </div>
       <ScrollTopButton />
     </section>
   );

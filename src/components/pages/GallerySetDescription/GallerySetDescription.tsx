@@ -6,6 +6,7 @@ import { useParams } from "react-router";
 import NotFound from "../NotFound/NotFound";
 import styles from "./GallerySetDescription.module.scss";
 import { IMAGE_SRC } from "../../../config";
+import RedirectLink from "../../common/RedirectLink/RedirectLink";
 
 const GallerySetDescription = () => {
   const { name } = useParams<{ name: string }>();
@@ -31,6 +32,7 @@ const GallerySetDescription = () => {
           </div>
         ))}
       </div>
+      <RedirectLink link="/gallery" children="go back to gallery" />
       <ScrollTopButton />
     </section>
   );

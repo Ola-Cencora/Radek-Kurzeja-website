@@ -14,7 +14,7 @@ const Music = () => {
       <PageTitle title="Music" />
       <div className={styles.columns}>
         <PhotoColumn
-          src={IMAGE_SRC("music.jpg")}
+          src={IMAGE_SRC("music.webp")}
           alt="Radosław Kurzeja playing a concert"
         />
         <MusicPlayersList />

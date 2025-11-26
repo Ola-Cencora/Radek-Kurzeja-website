@@ -14,7 +14,7 @@ const About = () => {
       <PageTitle title="About" />
       <div className={styles.columns}>
         <PhotoColumn
-          src={IMAGE_SRC("about.jpg")}
+          src={IMAGE_SRC("about.webp")}
           alt="Radosław Kurzeja playing a concert"
         />
         <div className={styles.columns__txt}>

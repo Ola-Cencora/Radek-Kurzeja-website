@@ -238,6 +238,22 @@ const galleryData: SetData[] = [
     gallerySetTitle: "Drawings",
     works: [
       {
+        id: "pierwsze-wrazenia-z-pobytu",
+        title: "Pierwsze wrażenia z pobytu / First Impressions from the Stay",
+        src: IMAGE_SRC("gallery/drawings/Pierwsze_wrazenia.webp"),
+        technique: "ink on paper",
+        dimensions: "43 cm",
+        date: "2018",
+      },
+      {
+        id: "drugie-wrazenia-z-pobytu",
+        title: "Drugie wrażenia z pobytu / Second Impressions from the Stay",
+        src: IMAGE_SRC("gallery/drawings/Drugie_wrazenia.webp"),
+        technique: "ink on paper",
+        dimensions: "43 cm",
+        date: "2018",
+      },
+      {
         id: "na-niebie-czesc-druga",
         title: "Na niebie, część druga / At the sky, part two",
         src: IMAGE_SRC("gallery/drawings/Na_niebie_czesc_druga.jpg"),

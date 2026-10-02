@@ -1,4 +1,11 @@
 export const albumsList = [
+    {
+    id: 9,
+    albumTitle: "Pieśni Ulotne - 2026",
+    title: "Pieśni Ulotne by Kurzeja / Kurzeja",
+    src: "https://bandcamp.com/EmbeddedPlayer/album=1125706149/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/",
+    href: "https://naszenagrania.bandcamp.com/album/pie-ni-ulotne",
+  },
   {
     id: 8,
     albumTitle: "Etiudy i sztuka dokumentu - 2023",
